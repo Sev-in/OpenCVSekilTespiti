@@ -1,0 +1,2 @@
+![Sonuçlar](/sonuclar.png)
+
