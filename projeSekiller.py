@@ -13,7 +13,7 @@ import numpy as np
 #8)drawCountours = resmin etrafındaki kontürleri renklendirdik.
 
 img = cv2.imread("OpenCV/proje01/sekiller.png")
-cv2.imshow("Başlangıç",img)
+cv2.imshow("Baslangic",img)
 gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 canny = cv2.Canny(gray,70,150) #150 = üst eşik değeri, 80 = alt eşik değeri canny= kurnaz,açıkgöz,güzel
 contours , _= cv2.findContours(canny,cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_NONE)
@@ -37,7 +37,7 @@ for cont in contours:
     # bu sayede img deki her bir nesnenin sınırları yeşile boyandı
     
 
-cv2.imshow("Sonuç",img)
+cv2.imshow("Sonuc",img)
 cv2.imshow("Siyah-Beyaz",canny)
 
 cv2.waitKey(0)
